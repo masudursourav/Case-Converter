@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 button{
     background-color: #FFA07A;
     padding: 0.7rem;
@@ -12,6 +13,11 @@ button{
 textarea{
     width: 70rem;
     height: 40rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    outline: none;
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
 }
 .text{
     text-align: center;
@@ -19,3 +25,24 @@ textarea{
 .title{
     text-align: center;
 }
+@media only screen and (max-width:  480px) {
+    textarea{
+     height: 10rem;
+     width: 25rem;
+    }
+  }
+  @media only screen and (max-width:  1080px) {
+    textarea{
+     height: 15rem;
+     width: 30rem;
+    }
+  }
+
+  @media only screen and (max-width:  1480px) {
+    textarea{
+     height: 45rem;
+     width: 22rem;
+    }
+  }
+
+  
