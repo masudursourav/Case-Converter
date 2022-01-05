@@ -1,10 +1,9 @@
+let input = document.querySelector("textarea");
 document.getElementById("upper-case").addEventListener("click",function (){
-    let input = document.querySelector("textarea");
     let string = input.value;
     input.value = string.toUpperCase();
  });
  document.getElementById("lower-case").addEventListener("click",function (){
-     let input = document.querySelector("textarea");
      let string = input.value;
      input.value = string.toLowerCase();
  });
@@ -20,7 +19,6 @@ document.getElementById("upper-case").addEventListener("click",function (){
  }
 
  document.getElementById("proper-case").addEventListener("click",function (){
-     let input = document.querySelector("textarea");
      let string = input.value;
      let newString = properCase(string);
      input.value = newString;
@@ -31,7 +29,6 @@ document.getElementById("upper-case").addEventListener("click",function (){
      return newString;
  }
  document.getElementById("sentence-case").addEventListener("click",function (){
-     let input = document.querySelector("textarea");
      let string = input.value;
      let newString = sentenceCase(string);
      input.value = newString;
@@ -50,7 +47,5 @@ document.getElementById("upper-case").addEventListener("click",function (){
      document.body.removeChild(element);
  }
  document.getElementById("save-text-file").addEventListener("click",function () {
-     let input = document.querySelector("textarea");
-     let string = input.value;
      download("text.txt" , string);
  });
