@@ -47,5 +47,6 @@ document.getElementById("upper-case").addEventListener("click",function (){
      document.body.removeChild(element);
  }
  document.getElementById("save-text-file").addEventListener("click",function () {
+     let string = input.value;
      download("text.txt" , string);
  });
